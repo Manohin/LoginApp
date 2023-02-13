@@ -5,5 +5,5 @@ If the authorization data is filled in incorrectly, an alert appears with an inp
 Added login and password hint buttons. On the second screen, a greeting with the username is displayed.
 The background color of all screens is implemented with a gradient.
 
-![Снимок экрана 2023-02-14 в 00 14 50](https://user-images.githubusercontent.com/111537419/218576143-5ecfeeb5-25b4-4129-bf06-acae175202b7.png)
-![Снимок экрана 2023-02-13 в 22 39 33](https://user-images.githubusercontent.com/111537419/218560047-44f603b8-290b-4d25-a6ce-fec2a6f50ed9.png)
+![Снимок экрана 2023-02-14 в 00 14 50](https://user-images.githubusercontent.com/111537419/218576402-56c4bba8-ab6a-4a55-b58d-a52fd59ff81d.png)
+![Снимок экрана 2023-02-13 в 22 39 33](https://user-images.githubusercontent.com/111537419/218576407-3392f08f-9930-4fe3-978e-1db376254976.png)
