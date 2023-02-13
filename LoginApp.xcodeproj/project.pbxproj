@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A589889299ACEA30029D128 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A589888299ACEA30029D128 /* ViewSettings.swift */; };
 		8AF418FD2999759A008DBA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF418FC2999759A008DBA2F /* AppDelegate.swift */; };
 		8AF418FF2999759A008DBA2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF418FE2999759A008DBA2F /* SceneDelegate.swift */; };
 		8AF419012999759A008DBA2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF419002999759A008DBA2F /* LoginViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A589888299ACEA30029D128 /* ViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
 		8AF418F92999759A008DBA2F /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF418FC2999759A008DBA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF418FE2999759A008DBA2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,11 +60,12 @@
 		8AF418FB2999759A008DBA2F /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				8AF418FC2999759A008DBA2F /* AppDelegate.swift */,
-				8AF418FE2999759A008DBA2F /* SceneDelegate.swift */,
+				8A589888299ACEA30029D128 /* ViewSettings.swift */,
+				8AF419022999759A008DBA2F /* Main.storyboard */,
 				8AF419002999759A008DBA2F /* LoginViewController.swift */,
 				8AF4191029997657008DBA2F /* WelcomeViewController.swift */,
-				8AF419022999759A008DBA2F /* Main.storyboard */,
+				8AF418FC2999759A008DBA2F /* AppDelegate.swift */,
+				8AF418FE2999759A008DBA2F /* SceneDelegate.swift */,
 				8AF419052999759C008DBA2F /* Assets.xcassets */,
 				8AF419072999759C008DBA2F /* LaunchScreen.storyboard */,
 				8AF4190A2999759C008DBA2F /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				8AF419012999759A008DBA2F /* LoginViewController.swift in Sources */,
 				8AF4191129997657008DBA2F /* WelcomeViewController.swift in Sources */,
+				8A589889299ACEA30029D128 /* ViewSettings.swift in Sources */,
 				8AF418FD2999759A008DBA2F /* AppDelegate.swift in Sources */,
 				8AF418FF2999759A008DBA2F /* SceneDelegate.swift in Sources */,
 			);

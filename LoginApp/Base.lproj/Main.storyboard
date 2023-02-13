@@ -87,7 +87,7 @@
         <scene sceneID="rPW-Bv-Mzj">
             <objects>
                 <viewController id="6HL-eE-dsY" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hFl-Yh-dbc">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Welcome" id="hFl-Yh-dbc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
