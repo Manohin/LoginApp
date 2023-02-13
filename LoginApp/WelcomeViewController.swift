@@ -17,8 +17,17 @@ final class WelcomeViewController: UIViewController {
         
         welcomeLabel.text = "Привет, \(userName ?? "")!"
         
-        let firstColor = UIColor(red: 255 / 255, green: 153 / 255, blue: 255 / 255, alpha: 1).cgColor
-        let secondColor = UIColor(red: 102 / 255, green: 102 / 255, blue: 255 / 255, alpha: 1).cgColor
+        let firstColor = UIColor(
+            red: 255 / 255,
+            green: 153 / 255,
+            blue: 255 / 255,
+            alpha: 1).cgColor
+        
+        let secondColor = UIColor(
+            red: 102 / 255,
+            green: 102 / 255,
+            blue: 255 / 255,
+            alpha: 1).cgColor
         
         let gradientLayer = CAGradientLayer()
         
