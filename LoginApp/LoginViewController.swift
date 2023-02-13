@@ -25,60 +25,66 @@ final class LoginViewController: UIViewController {
         welcomeVC.userName = userLoginTF.text ?? ""
     }
     
+    override func viewDidLoad() {
+        applyGradient(view: super.view)
+    }
+    
     @IBAction func loginButtonTapped() {
-        guard userLoginTF.text != "",
-              userPasswordTF.text != "" else {
-            present(getAlertMessage(
-                title: "⚠️",
-                message: "Логин и пароль не могут быть пустыми! Заполните оба поля!"),
-                    animated: true
-            )
-            userPasswordTF.text = ""
-            return
-        }
-        guard userLoginTF.text == userLogin,
-              userPasswordTF.text == userPassword else {
-            present(getAlertMessage(
-                title: "Неправильный логин или пароль",
-                message: "Пожалуйста, введите корректные данные для входа"),
-                    animated: true
-            )
-            userPasswordTF.text = ""
-            return
-        }
+        loginCheck()
     }
     
     @IBAction func forgotLoginButtonTapped() {
-        present(getAlertMessage(
+        getAlertMessage(
             title: "Ой!",
-            message: "Имя пользователя: \(userLogin) 💡"),
-                animated: true
+            message: "Имя пользователя: \(userLogin) 💡"
         )
     }
     
     @IBAction func forgotPasswordButtonTapped() {
-        present(getAlertMessage(
+        getAlertMessage(
             title: "Ой!",
-            message: "Пароль: \(userPassword) 💡"),
-                animated: true
-        )
+            message: "Пароль: \(userPassword) 💡")
     }
     
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         userLoginTF.text = ""
         userPasswordTF.text = ""
     }
-}
-
-private func getAlertMessage(title: String, message: String) -> UIAlertController {
-    let alert = UIAlertController(
-        title: title,
-        message: message,
-        preferredStyle: .alert
-    )
-    alert.addAction(UIAlertAction(
-        title: "ОК",
-        style: .cancel)
-    )
-    return alert
+    
+    private func loginCheck() {
+        guard userLoginTF.text != "",
+              userPasswordTF.text != "" else {
+            getAlertMessage(
+                title: "⚠️",
+                message: "Логин и пароль не могут быть пустыми! Заполните оба поля!"
+            )
+            return
+        }
+        
+        guard userLoginTF.text == userLogin,
+              userPasswordTF.text == userPassword else {
+            getAlertMessage(
+                title: "Неправильный логин или пароль",
+                message: "Пожалуйста, введите корректные данные для входа"
+            )
+            return
+        }
+    }
+    
+    private func getAlertMessage(title: String, message: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(
+            title: "ОК",
+            style: .cancel)
+        )
+        present(
+            alert,
+            animated: true,
+            completion: ({ self.userPasswordTF.text = "" })
+        )
+    }
 }
