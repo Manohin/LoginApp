@@ -30,7 +30,23 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped() {
-        loginCheck()
+        guard userLoginTF.text != "",
+              userPasswordTF.text != "" else {
+            getAlertMessage(
+                title: "⚠️",
+                message: "Логин и пароль не могут быть пустыми! Заполните оба поля!"
+            )
+            return
+        }
+        
+        guard userLoginTF.text == userLogin,
+              userPasswordTF.text == userPassword else {
+            getAlertMessage(
+                title: "Неправильный логин или пароль",
+                message: "Пожалуйста, введите корректные данные для входа"
+            )
+            return
+        }
     }
     
     @IBAction func forgotLoginButtonTapped() {
@@ -49,26 +65,6 @@ final class LoginViewController: UIViewController {
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
         userLoginTF.text = ""
         userPasswordTF.text = ""
-    }
-    
-    private func loginCheck() {
-        guard userLoginTF.text != "",
-              userPasswordTF.text != "" else {
-            getAlertMessage(
-                title: "⚠️",
-                message: "Логин и пароль не могут быть пустыми! Заполните оба поля!"
-            )
-            return
-        }
-        
-        guard userLoginTF.text == userLogin,
-              userPasswordTF.text == userPassword else {
-            getAlertMessage(
-                title: "Неправильный логин или пароль",
-                message: "Пожалуйста, введите корректные данные для входа"
-            )
-            return
-        }
     }
     
     private func getAlertMessage(title: String, message: String) {
