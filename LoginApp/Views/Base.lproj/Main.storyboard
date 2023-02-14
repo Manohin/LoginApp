@@ -107,8 +107,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="logOutButtonTapped" destination="6HL-eE-dsY" eventType="touchUpInside" id="Rgb-WW-lUk"/>
-                                    <segue destination="WSU-ZC-KfS" kind="unwind" unwindAction="unwindFor:" id="QbM-oQ-iOu"/>
+                                    <segue destination="WSU-ZC-KfS" kind="unwind" unwindAction="unwindFor:" id="tAU-q7-4ha"/>
                                 </connections>
                             </button>
                         </subviews>

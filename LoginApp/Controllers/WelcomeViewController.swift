@@ -18,8 +18,4 @@ final class WelcomeViewController: UIViewController {
         welcomeLabel.text = "Привет, \(userName ?? "")!"
         applyGradient(view: super.view)
     }
-    
-    @IBAction func logOutButtonTapped() {
-        dismiss(animated: true)
-    }
 }
