@@ -41,6 +41,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A58988D299B8F7A0029D128 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				8A589888299ACEA30029D128 /* ViewSettings.swift */,
+				8AF418FC2999759A008DBA2F /* AppDelegate.swift */,
+				8AF418FE2999759A008DBA2F /* SceneDelegate.swift */,
+				8AF419052999759C008DBA2F /* Assets.xcassets */,
+				8AF4190A2999759C008DBA2F /* Info.plist */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		8A58988E299B8F8C0029D128 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AF419022999759A008DBA2F /* Main.storyboard */,
+				8AF419072999759C008DBA2F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A58988F299B8F9F0029D128 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AF419002999759A008DBA2F /* LoginViewController.swift */,
+				8AF4191029997657008DBA2F /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8AF418F02999759A008DBA2F = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +90,9 @@
 		8AF418FB2999759A008DBA2F /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				8A589888299ACEA30029D128 /* ViewSettings.swift */,
-				8AF419022999759A008DBA2F /* Main.storyboard */,
-				8AF419002999759A008DBA2F /* LoginViewController.swift */,
-				8AF4191029997657008DBA2F /* WelcomeViewController.swift */,
-				8AF418FC2999759A008DBA2F /* AppDelegate.swift */,
-				8AF418FE2999759A008DBA2F /* SceneDelegate.swift */,
-				8AF419052999759C008DBA2F /* Assets.xcassets */,
-				8AF419072999759C008DBA2F /* LaunchScreen.storyboard */,
-				8AF4190A2999759C008DBA2F /* Info.plist */,
+				8A58988E299B8F8C0029D128 /* Views */,
+				8A58988F299B8F9F0029D128 /* Controllers */,
+				8A58988D299B8F7A0029D128 /* Systems */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
