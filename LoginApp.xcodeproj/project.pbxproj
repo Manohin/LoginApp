@@ -41,7 +41,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A58988D299B8F7A0029D128 /* Systems */ = {
+		8A58988D299B8F7A0029D128 /* Systems and Supports */ = {
 			isa = PBXGroup;
 			children = (
 				8A589888299ACEA30029D128 /* ViewSettings.swift */,
@@ -50,7 +50,7 @@
 				8AF419052999759C008DBA2F /* Assets.xcassets */,
 				8AF4190A2999759C008DBA2F /* Info.plist */,
 			);
-			path = Systems;
+			path = "Systems and Supports";
 			sourceTree = "<group>";
 		};
 		8A58988E299B8F8C0029D128 /* Views */ = {
@@ -92,7 +92,7 @@
 			children = (
 				8A58988E299B8F8C0029D128 /* Views */,
 				8A58988F299B8F9F0029D128 /* Controllers */,
-				8A58988D299B8F7A0029D128 /* Systems */,
+				8A58988D299B8F7A0029D128 /* Systems and Supports */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P894A63FN8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = "LoginApp/Systems and Supports/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P894A63FN8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = "LoginApp/Systems and Supports/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
