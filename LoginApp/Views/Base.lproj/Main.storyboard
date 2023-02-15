@@ -37,7 +37,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Войти"/>
                                         <connections>
                                             <action selector="loginButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iou-LI-Ecp"/>
-                                            <segue destination="6HL-eE-dsY" kind="presentation" modalPresentationStyle="fullScreen" id="Xf7-oc-WlR"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="71l-E9-ZX0">
@@ -79,6 +78,7 @@
                     <connections>
                         <outlet property="userLoginTF" destination="JeU-ee-deZ" id="fiY-xW-VqN"/>
                         <outlet property="userPasswordTF" destination="fkL-ZY-nMT" id="cls-Ht-1xM"/>
+                        <segue destination="6HL-eE-dsY" kind="presentation" identifier="segueIdentifier" id="gNo-Pa-xRH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +88,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="rPW-Bv-Mzj">
             <objects>
-                <viewController id="6HL-eE-dsY" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6HL-eE-dsY" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Welcome" id="hFl-Yh-dbc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2v-Gu-JdI">
-                                <rect key="frame" x="123" y="188" width="75" height="84"/>
+                                <rect key="frame" x="122.5" y="188" width="75" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="AOu-T8-y0c"/>
                                     <constraint firstAttribute="height" constant="84" id="SX9-Re-ALm"/>

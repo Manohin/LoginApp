@@ -48,6 +48,7 @@ final class LoginViewController: UIViewController {
             )
             return
         }
+        performSegue(withIdentifier: "segueIdentifier", sender: nil)
     }
     
     @IBAction func forgotLoginButtonTapped() {
