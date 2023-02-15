@@ -110,11 +110,23 @@
                                     <segue destination="WSU-ZC-KfS" kind="unwind" unwindAction="unwindFor:" id="tAU-q7-4ha"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2v-Gu-JdI">
+                                <rect key="frame" x="123" y="188" width="75" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="AOu-T8-y0c"/>
+                                    <constraint firstAttribute="height" constant="84" id="SX9-Re-ALm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9vf-NL-eD8"/>
                         <constraints>
+                            <constraint firstItem="G2v-Gu-JdI" firstAttribute="centerX" secondItem="9vf-NL-eD8" secondAttribute="centerX" id="0Gy-7K-qqr"/>
                             <constraint firstItem="xtQ-Rb-BOj" firstAttribute="top" secondItem="9vf-NL-eD8" secondAttribute="top" constant="86" id="0nB-TC-Q9j"/>
                             <constraint firstItem="lEC-f4-IKq" firstAttribute="centerX" secondItem="9vf-NL-eD8" secondAttribute="centerX" id="ceS-9b-vR1"/>
+                            <constraint firstItem="G2v-Gu-JdI" firstAttribute="top" secondItem="xtQ-Rb-BOj" secondAttribute="bottom" constant="61" id="ct3-21-hUk"/>
                             <constraint firstItem="xtQ-Rb-BOj" firstAttribute="centerX" secondItem="9vf-NL-eD8" secondAttribute="centerX" id="pHi-rL-foz"/>
                             <constraint firstItem="9vf-NL-eD8" firstAttribute="bottom" secondItem="lEC-f4-IKq" secondAttribute="bottom" constant="170" id="zQk-ZJ-oQy"/>
                         </constraints>

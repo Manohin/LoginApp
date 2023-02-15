@@ -9,11 +9,16 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
+    @IBOutlet var userLoginTF: UITextField!
+    @IBOutlet var userPasswordTF: UITextField!
+    
     private var userLogin = "1"
     private var userPassword = "1"
     
-    @IBOutlet var userLoginTF: UITextField!
-    @IBOutlet var userPasswordTF: UITextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        applyGradient(view: super.view)
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -23,11 +28,6 @@ final class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = userLoginTF.text ?? ""
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        applyGradient(view: super.view)
     }
     
     @IBAction func loginButtonTapped() {
