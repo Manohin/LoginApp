@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A589889299ACEA30029D128 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A589888299ACEA30029D128 /* ViewSettings.swift */; };
 		8AF418FD2999759A008DBA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF418FC2999759A008DBA2F /* AppDelegate.swift */; };
 		8AF418FF2999759A008DBA2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF418FE2999759A008DBA2F /* SceneDelegate.swift */; };
 		8AF419012999759A008DBA2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF419002999759A008DBA2F /* LoginViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A589888299ACEA30029D128 /* ViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
 		8AF418F92999759A008DBA2F /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF418FC2999759A008DBA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF418FE2999759A008DBA2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +42,6 @@
 		8A58988D299B8F7A0029D128 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				8A589888299ACEA30029D128 /* ViewSettings.swift */,
 				8AF418FC2999759A008DBA2F /* AppDelegate.swift */,
 				8AF418FE2999759A008DBA2F /* SceneDelegate.swift */,
 				8AF4190A2999759C008DBA2F /* Info.plist */,
@@ -170,7 +167,6 @@
 			files = (
 				8AF419012999759A008DBA2F /* LoginViewController.swift in Sources */,
 				8AF4191129997657008DBA2F /* WelcomeViewController.swift in Sources */,
-				8A589889299ACEA30029D128 /* ViewSettings.swift in Sources */,
 				8AF418FD2999759A008DBA2F /* AppDelegate.swift in Sources */,
 				8AF418FF2999759A008DBA2F /* SceneDelegate.swift in Sources */,
 			);
@@ -327,6 +323,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +355,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -17,7 +17,7 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyGradient(view: super.view)
+        view.applyGradient()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -85,4 +85,30 @@ final class LoginViewController: UIViewController {
             completion: ({ self.userPasswordTF.text = "" })
         )
     }
+}
+
+extension UIView {
+    func applyGradient() {
+        let firstColor = UIColor(
+            red: 255 / 255,
+            green: 153 / 255,
+            blue: 255 / 255,
+            alpha: 1).cgColor
+        
+        let secondColor = UIColor(
+            red: 102 / 255,
+            green: 102 / 255,
+            blue: 255 / 255,
+            alpha: 1).cgColor
+        
+        let gradientLayer = CAGradientLayer()
+        
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = [firstColor, secondColor]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+        
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
+
 }

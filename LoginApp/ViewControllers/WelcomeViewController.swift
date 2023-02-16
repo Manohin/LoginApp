@@ -16,6 +16,6 @@ final class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         welcomeLabel.text = "Привет, \(userName ?? "")!"
-        applyGradient(view: super.view)
+        view.applyGradient()
     }
 }
