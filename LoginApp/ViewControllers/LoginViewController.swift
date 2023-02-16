@@ -17,6 +17,7 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.applyGradient()
     }
     
@@ -77,12 +78,14 @@ final class LoginViewController: UIViewController {
         )
         alert.addAction(UIAlertAction(
             title: "ОК",
-            style: .cancel)
+            style: .cancel, handler: (
+                { _ in self.userPasswordTF.text = "" }
+            )
+        )
         )
         present(
             alert,
-            animated: true,
-            completion: ({ self.userPasswordTF.text = "" })
+            animated: true
         )
     }
 }
@@ -110,5 +113,5 @@ extension UIView {
         
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
-
+    
 }
