@@ -16,12 +16,6 @@ final class FirstAboutViewController: UIViewController {
     var user: User!
     var about: String!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-       
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
