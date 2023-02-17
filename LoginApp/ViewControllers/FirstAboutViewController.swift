@@ -12,10 +12,10 @@ final class FirstAboutViewController: UIViewController {
     
     @IBOutlet var photoImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var storyLabel: UILabel!
+    @IBOutlet var aboutLabel: UILabel!
     
     var user: User!
-    var story: String!
+    var about: String!
     
     
     
@@ -25,8 +25,8 @@ final class FirstAboutViewController: UIViewController {
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
         nameLabel.font = .boldSystemFont(ofSize: 24.0)
         nameLabel.text = user.person.fullName
-        storyLabel.text = story
-        
+        aboutLabel.text = "Имя: \(user.person.name)\nФамилия: \(user.person.secondName)\nВозраст: \(user.person.yearsOld) года\nСтрана проживания: \(user.person.country)\nГород: \(user.person.city)\n\nУзнать больше можно, нажав по вкладке 'Подробнее' в правом нижнем углу экрана 😉"
+
     }
     
     

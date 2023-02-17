@@ -155,6 +155,7 @@
                     <connections>
                         <segue destination="6HL-eE-dsY" kind="relationship" relationship="viewControllers" id="uhK-90-RkG"/>
                         <segue destination="Kep-oI-Jt7" kind="relationship" relationship="viewControllers" id="xzJ-1H-GtH"/>
+                        <segue destination="hK4-xw-Tgs" kind="relationship" relationship="viewControllers" id="e04-Cg-BKb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eO-9U-Xcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,7 +169,7 @@
                     <tabBarItem key="tabBarItem" title="Добро пожаловать" image="2.brakesignal" catalog="system" id="WeW-Yr-KGo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VQi-dQ-c4H">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -201,9 +202,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-uG-5dz">
-                                <rect key="frame" x="16" y="254" width="288" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-uG-5dz">
+                                <rect key="frame" x="16" y="254" width="288" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -223,19 +224,63 @@
                     </view>
                     <navigationItem key="navigationItem" id="kX3-7V-nc1"/>
                     <connections>
+                        <outlet property="aboutLabel" destination="9CO-uG-5dz" id="YrN-rK-z6W"/>
                         <outlet property="nameLabel" destination="KTe-DI-ZqX" id="Aot-Zl-zPX"/>
                         <outlet property="photoImageView" destination="m6I-ny-37X" id="R0L-wR-IMp"/>
-                        <outlet property="storyLabel" destination="9CO-uG-5dz" id="YrN-rK-z6W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPF-ek-rXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2723" y="-790"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Sbc-5C-bxc">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="hK4-xw-Tgs" customClass="SecondAboutViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTX-0O-tEB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-Gn-txO">
+                                <rect key="frame" x="16" y="250" width="288" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alexey" translatesAutoresizingMaskIntoConstraints="NO" id="L8P-pi-ZUe">
+                                <rect key="frame" x="60" y="35" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QWn-At-cyD"/>
+                                    <constraint firstAttribute="height" constant="200" id="Vtt-ef-J88"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="44P-fC-dTo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L8P-pi-ZUe" firstAttribute="centerX" secondItem="44P-fC-dTo" secondAttribute="centerX" id="0ID-97-Zpp"/>
+                            <constraint firstItem="L8P-pi-ZUe" firstAttribute="top" secondItem="44P-fC-dTo" secondAttribute="top" constant="35" id="DRp-hp-uo3"/>
+                            <constraint firstItem="hZ4-Gn-txO" firstAttribute="leading" secondItem="44P-fC-dTo" secondAttribute="leading" constant="16" id="XaN-mT-Gac"/>
+                            <constraint firstItem="44P-fC-dTo" firstAttribute="trailing" secondItem="hZ4-Gn-txO" secondAttribute="trailing" constant="16" id="idn-Y3-poD"/>
+                            <constraint firstItem="hZ4-Gn-txO" firstAttribute="top" secondItem="44P-fC-dTo" secondAttribute="top" constant="250" id="lhy-bV-Uer"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="bookmark" catalog="system" id="82u-Ow-PpX"/>
+                    <navigationItem key="navigationItem" id="ApI-9M-AxT"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="L8P-pi-ZUe" id="Z86-M5-Xxy"/>
+                        <outlet property="storyLabel" destination="hZ4-Gn-txO" id="8ya-1A-6cE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQi-uy-99X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2723" y="729"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.brakesignal" catalog="system" width="128" height="87"/>
         <image name="2.brakesignal" catalog="system" width="128" height="87"/>
+        <image name="alexey" width="991" height="1057"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="photo" width="640" height="640"/>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
