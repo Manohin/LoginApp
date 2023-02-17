@@ -9,23 +9,20 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    let alexey = Person(name: "Алексей", secondName: "Манохин", yearsOld: 32, country: "Россия", city: "Белгород", activity: "Предприниматель")
-    
-    lazy var user = User(login: "1", password: "1", person: alexey)
-    
     @IBOutlet var userLoginTF: UITextField!
     @IBOutlet var userPasswordTF: UITextField!
     
-    private var userLogin = "1"
-    private var userPassword = "1"
+    let person = Person()
+    lazy var user = User(person: person)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.applyGradient()
         
-        userLoginTF.text = "1"
-        userPasswordTF.text = "1"
+        userLoginTF.text = user.login
+        userPasswordTF.text = user.password
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -36,18 +33,17 @@ final class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
         
-        
         guard let viewControllers = tabBarVC.viewControllers else { return }
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = alexey.name
+                welcomeVC.user = user
                 welcomeVC.view.applyGradient()
                 welcomeVC.title = "Добро пожаловать"
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let firstAboutVC = navigationVC.topViewController as? FirstAboutViewController else { return }
+                firstAboutVC.user = user
                 firstAboutVC.view.applyGradient()
-                firstAboutVC.title = "Обо мне"
             }
         }
     }
@@ -62,8 +58,8 @@ final class LoginViewController: UIViewController {
             return
         }
         
-        guard userLoginTF.text == userLogin,
-              userPasswordTF.text == userPassword else {
+        guard userLoginTF.text == user.login,
+              userPasswordTF.text == user.password else {
             getAlertMessage(
                 title: "Неправильный логин или пароль",
                 message: "Пожалуйста, введите корректные данные для входа"
@@ -76,14 +72,14 @@ final class LoginViewController: UIViewController {
     @IBAction func forgotLoginButtonTapped() {
         getAlertMessage(
             title: "Ой!",
-            message: "Имя пользователя: \(userLogin) 💡"
+            message: "Имя пользователя: \(user.login) 💡"
         )
     }
     
     @IBAction func forgotPasswordButtonTapped() {
         getAlertMessage(
             title: "Ой!",
-            message: "Пароль: \(userPassword) 💡")
+            message: "Пароль: \(user.password) 💡")
     }
     
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {

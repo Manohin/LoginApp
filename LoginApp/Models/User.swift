@@ -7,16 +7,19 @@
 
 
 struct User {
-    let login: String?
-    let password: String?
-    let person: Person?
+    let login = "Alexey"
+    let password = "111"
+    let person: Person
 }
 
 struct Person {
-    let name: String
-    let secondName: String
-    let yearsOld: Int
-    let country: String
-    let city: String
-    let activity: String
+    let name = "Алексей"
+    let secondName = "Манохин"
+    let yearsOld = 32
+    let country = "Россия"
+    let city = "Белгород"
+    
+    var fullName: String {
+        name + " " + secondName
+    }
 }
