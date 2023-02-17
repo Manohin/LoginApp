@@ -5,7 +5,6 @@
 //  Created by Alexey Manokhin on 17.02.2023.
 //
 
-
 struct User {
     let login = "Alexey"
     let password = "111"
@@ -18,7 +17,7 @@ struct Person {
     let yearsOld: Int
     let country: String
     let city: String
-    var privateStory: String?
+    var privateStory: String
     
     var fullName: String {
         name + " " + secondName

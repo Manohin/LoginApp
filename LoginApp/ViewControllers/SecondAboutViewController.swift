@@ -14,10 +14,10 @@ class SecondAboutViewController: UIViewController {
     
     var user: User!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        storyLabel.text = user.person.privateStory
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         photoImageView.layer.cornerRadius = photoImageView.frame.height / 2
+        storyLabel.text = ""
+        storyLabel.animation(typing: "\(user.person.privateStory)", duration: 0.03)
     }
 }
