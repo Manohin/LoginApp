@@ -16,7 +16,9 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.applyGradient()
-        welcomeLabel.text = "Привет, \(userName ?? "")!"
+        if userName == "1" {
+            welcomeLabel.text = "Привет, \(userName ?? "")"
+        }
+        
     }
 }

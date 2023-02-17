@@ -19,6 +19,9 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         view.applyGradient()
+        
+        userLoginTF.text = "1"
+        userPasswordTF.text = "1"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -27,8 +30,22 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userLoginTF.text ?? ""
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        
+        
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = "Алексей"
+                welcomeVC.view.applyGradient()
+                welcomeVC.title = "Добро пожаловать"
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let firstAboutVC = navigationVC.topViewController as? FirstAboutViewController else { return }
+                firstAboutVC.view.applyGradient()
+                firstAboutVC.title = "Обо мне"
+            }
+        }
     }
     
     @IBAction func loginButtonTapped() {
@@ -78,9 +95,9 @@ final class LoginViewController: UIViewController {
         )
         alert.addAction(UIAlertAction(
             title: "ОК",
-            style: .cancel, handler: (
-                { _ in self.userPasswordTF.text = "" }
-            )
+            style: .cancel, handler: { _ in
+                self.userPasswordTF.text = ""
+            }
         )
         )
         present(
