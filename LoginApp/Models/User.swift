@@ -13,11 +13,12 @@ struct User {
 }
 
 struct Person {
-    let name = "Алексей"
-    let secondName = "Манохин"
-    let yearsOld = 32
-    let country = "Россия"
-    let city = "Белгород"
+    let name: String
+    let secondName: String
+    let yearsOld: Int
+    let country: String
+    let city: String
+    var privateStory: String?
     
     var fullName: String {
         name + " " + secondName

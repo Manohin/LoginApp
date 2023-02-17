@@ -12,8 +12,18 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userLoginTF: UITextField!
     @IBOutlet var userPasswordTF: UITextField!
     
-    let person = Person()
-    lazy var user = User(person: person)
+    let story = "Привет! Меня зовут Алексей! Родился и вырос в городе Белгород. С 2016-го года занимаюсь небольшим бизнесом по производству печатей. Были попытки продавать товары на Ozon, но ожидания не оправдались. Решил заняться чем-то действительно крутым, вспомнил, что в далеком 2012-м году хотел научиться писать приложения для iPhone, поэтому с прошлого года всерьез увлекся программированием на языке Swift. Записался на курс в SwiftBook, учусь :) Благодаря Алексею Ефимову у меня это даже немного получается =) Хочу стать крутым iOS-разработчиком и уверен, что у меня это получится!"
+    
+    lazy var alexey = Person(
+        name: "Алексей",
+        secondName: "Манохин",
+        yearsOld: 32, country: "Россия",
+        city: "Белгород",
+        privateStory: story)
+    
+    lazy var user = User(person: alexey)
+    
+    
     
     
     override func viewDidLoad() {
@@ -43,6 +53,7 @@ final class LoginViewController: UIViewController {
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let firstAboutVC = navigationVC.topViewController as? FirstAboutViewController else { return }
                 firstAboutVC.user = user
+                firstAboutVC.story = alexey.privateStory
                 firstAboutVC.view.applyGradient()
             }
         }

@@ -201,21 +201,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-uG-5dz">
+                                <rect key="frame" x="16" y="254" width="288" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oIR-Ya-qzL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oIR-Ya-qzL" firstAttribute="trailing" secondItem="KTe-DI-ZqX" secondAttribute="trailing" constant="16" id="4Gm-tO-Wbb"/>
                             <constraint firstItem="KTe-DI-ZqX" firstAttribute="top" secondItem="m6I-ny-37X" secondAttribute="bottom" constant="16" id="AAC-Gz-8Z1"/>
+                            <constraint firstItem="oIR-Ya-qzL" firstAttribute="trailing" secondItem="9CO-uG-5dz" secondAttribute="trailing" constant="16" id="BeB-f9-NPo"/>
                             <constraint firstItem="KTe-DI-ZqX" firstAttribute="leading" secondItem="oIR-Ya-qzL" secondAttribute="leading" constant="16" id="Mmi-df-2rH"/>
                             <constraint firstItem="m6I-ny-37X" firstAttribute="top" secondItem="oIR-Ya-qzL" secondAttribute="top" constant="37" id="NHZ-Qb-lmM"/>
                             <constraint firstItem="m6I-ny-37X" firstAttribute="centerX" secondItem="oIR-Ya-qzL" secondAttribute="centerX" id="pBq-t4-wdM"/>
+                            <constraint firstItem="9CO-uG-5dz" firstAttribute="top" secondItem="KTe-DI-ZqX" secondAttribute="bottom" constant="16" id="xUk-ov-hRK"/>
+                            <constraint firstItem="9CO-uG-5dz" firstAttribute="leading" secondItem="oIR-Ya-qzL" secondAttribute="leading" constant="16" id="yAq-fz-pvS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kX3-7V-nc1"/>
                     <connections>
                         <outlet property="nameLabel" destination="KTe-DI-ZqX" id="Aot-Zl-zPX"/>
                         <outlet property="photoImageView" destination="m6I-ny-37X" id="R0L-wR-IMp"/>
+                        <outlet property="storyLabel" destination="9CO-uG-5dz" id="YrN-rK-z6W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPF-ek-rXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
