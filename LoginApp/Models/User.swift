@@ -7,15 +7,16 @@
 
 
 struct User {
-     let login: String?
-     let password: String?
-     let person: Person?
+    let login: String?
+    let password: String?
+    let person: Person?
 }
 
 struct Person {
-     let name: String
-     let secondName: String
-     let yearsOld: Int
-     let city: String
-     let activity: String
+    let name: String
+    let secondName: String
+    let yearsOld: Int
+    let country: String
+    let city: String
+    let activity: String
 }

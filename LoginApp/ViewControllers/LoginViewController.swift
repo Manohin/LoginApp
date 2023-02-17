@@ -9,6 +9,10 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
+    let alexey = Person(name: "Алексей", secondName: "Манохин", yearsOld: 32, country: "Россия", city: "Белгород", activity: "Предприниматель")
+    
+    lazy var user = User(login: "1", password: "1", person: alexey)
+    
     @IBOutlet var userLoginTF: UITextField!
     @IBOutlet var userPasswordTF: UITextField!
     
@@ -37,7 +41,7 @@ final class LoginViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = "Алексей"
+                welcomeVC.userName = alexey.name
                 welcomeVC.view.applyGradient()
                 welcomeVC.title = "Добро пожаловать"
             } else if let navigationVC = viewController as? UINavigationController {
