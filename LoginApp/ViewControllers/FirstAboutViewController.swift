@@ -29,4 +29,7 @@ final class FirstAboutViewController: UIViewController {
         aboutLabel.animation(typing: "\(aboutText)", duration: 0.03)
     }
     
+    
+    
+    
 }

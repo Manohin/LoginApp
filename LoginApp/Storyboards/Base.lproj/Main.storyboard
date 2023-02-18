@@ -202,7 +202,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-uG-5dz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-uG-5dz">
                                 <rect key="frame" x="16" y="254" width="288" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -222,7 +222,13 @@
                             <constraint firstItem="9CO-uG-5dz" firstAttribute="leading" secondItem="oIR-Ya-qzL" secondAttribute="leading" constant="16" id="yAq-fz-pvS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kX3-7V-nc1"/>
+                    <navigationItem key="navigationItem" id="kX3-7V-nc1">
+                        <barButtonItem key="rightBarButtonItem" title="Выход" image="pip.exit" catalog="system" id="n21-fS-WGR">
+                            <connections>
+                                <segue destination="55s-fG-Fpu" kind="unwind" unwindAction="unwindFor:" id="jYd-B0-Ugh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="aboutLabel" destination="9CO-uG-5dz" id="YrN-rK-z6W"/>
                         <outlet property="nameLabel" destination="KTe-DI-ZqX" id="Aot-Zl-zPX"/>
@@ -230,6 +236,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPF-ek-rXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="55s-fG-Fpu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2723" y="-790"/>
         </scene>
@@ -241,8 +248,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-Gn-txO">
-                                <rect key="frame" x="16" y="250" width="288" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-Gn-txO">
+                                <rect key="frame" x="16" y="250" width="288" height="253"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -262,6 +269,7 @@
                             <constraint firstItem="hZ4-Gn-txO" firstAttribute="leading" secondItem="44P-fC-dTo" secondAttribute="leading" constant="16" id="XaN-mT-Gac"/>
                             <constraint firstItem="44P-fC-dTo" firstAttribute="trailing" secondItem="hZ4-Gn-txO" secondAttribute="trailing" constant="16" id="idn-Y3-poD"/>
                             <constraint firstItem="hZ4-Gn-txO" firstAttribute="top" secondItem="44P-fC-dTo" secondAttribute="top" constant="250" id="lhy-bV-Uer"/>
+                            <constraint firstItem="44P-fC-dTo" firstAttribute="bottom" secondItem="hZ4-Gn-txO" secondAttribute="bottom" constant="16" id="n1h-hy-nMn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="bookmark" catalog="system" id="82u-Ow-PpX"/>
@@ -282,6 +290,7 @@
         <image name="alexey" width="991" height="1057"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="photo" width="640" height="640"/>
+        <image name="pip.exit" catalog="system" width="128" height="98"/>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
