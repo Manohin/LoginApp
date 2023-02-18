@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondAboutViewController: UIViewController {
+final class SecondAboutViewController: UIViewController {
     
     @IBOutlet var storyLabel: UILabel!
     @IBOutlet var photoImageView: UIImageView!

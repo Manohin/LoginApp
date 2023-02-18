@@ -14,7 +14,6 @@ final class FirstAboutViewController: UIViewController {
     @IBOutlet var aboutLabel: UILabel!
     
     var user: User!
-    var about: String!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -28,8 +27,4 @@ final class FirstAboutViewController: UIViewController {
         aboutLabel.text = ""
         aboutLabel.animation(typing: "\(aboutText)", duration: 0.03)
     }
-    
-    
-    
-    
 }

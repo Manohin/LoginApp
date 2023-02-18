@@ -169,7 +169,7 @@
                     <tabBarItem key="tabBarItem" title="Добро пожаловать" image="2.brakesignal" catalog="system" id="WeW-Yr-KGo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VQi-dQ-c4H">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -249,26 +249,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-Gn-txO">
-                                <rect key="frame" x="16" y="250" width="288" height="253"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="16" y="232" width="288" height="271"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alexey" translatesAutoresizingMaskIntoConstraints="NO" id="L8P-pi-ZUe">
-                                <rect key="frame" x="60" y="35" width="200" height="200"/>
+                                <rect key="frame" x="70" y="36" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="QWn-At-cyD"/>
-                                    <constraint firstAttribute="height" constant="200" id="Vtt-ef-J88"/>
+                                    <constraint firstAttribute="width" constant="180" id="Dxo-pz-fUb"/>
+                                    <constraint firstAttribute="height" constant="180" id="VIV-Os-Wax"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="44P-fC-dTo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="L8P-pi-ZUe" firstAttribute="centerX" secondItem="44P-fC-dTo" secondAttribute="centerX" id="0ID-97-Zpp"/>
-                            <constraint firstItem="L8P-pi-ZUe" firstAttribute="top" secondItem="44P-fC-dTo" secondAttribute="top" constant="35" id="DRp-hp-uo3"/>
+                            <constraint firstItem="hZ4-Gn-txO" firstAttribute="top" secondItem="L8P-pi-ZUe" secondAttribute="bottom" constant="16" id="MTT-fF-a5R"/>
+                            <constraint firstItem="L8P-pi-ZUe" firstAttribute="centerX" secondItem="44P-fC-dTo" secondAttribute="centerX" id="N6C-nJ-Cu3"/>
+                            <constraint firstItem="L8P-pi-ZUe" firstAttribute="top" secondItem="44P-fC-dTo" secondAttribute="top" constant="36" id="Qgf-0N-dhT"/>
                             <constraint firstItem="hZ4-Gn-txO" firstAttribute="leading" secondItem="44P-fC-dTo" secondAttribute="leading" constant="16" id="XaN-mT-Gac"/>
                             <constraint firstItem="44P-fC-dTo" firstAttribute="trailing" secondItem="hZ4-Gn-txO" secondAttribute="trailing" constant="16" id="idn-Y3-poD"/>
-                            <constraint firstItem="hZ4-Gn-txO" firstAttribute="top" secondItem="44P-fC-dTo" secondAttribute="top" constant="250" id="lhy-bV-Uer"/>
                             <constraint firstItem="44P-fC-dTo" firstAttribute="bottom" secondItem="hZ4-Gn-txO" secondAttribute="bottom" constant="16" id="n1h-hy-nMn"/>
                         </constraints>
                     </view>
