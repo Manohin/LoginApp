@@ -19,7 +19,8 @@ final class LoginViewController: UIViewController {
         secondName: "Манохин",
         yearsOld: 32, country: "Россия",
         city: "Белгород",
-        privateStory: story)
+        privateStory: story
+    )
     
     lazy var user = User(person: alexey)
     
