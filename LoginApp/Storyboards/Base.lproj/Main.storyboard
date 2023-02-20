@@ -94,8 +94,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtQ-Rb-BOj">
-                                <rect key="frame" x="87" y="86" width="146" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xtQ-Rb-BOj">
+                                <rect key="frame" x="16" y="86" width="288" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -125,14 +125,15 @@
                         <viewLayoutGuide key="safeArea" id="9vf-NL-eD8"/>
                         <constraints>
                             <constraint firstItem="G2v-Gu-JdI" firstAttribute="centerX" secondItem="9vf-NL-eD8" secondAttribute="centerX" id="0Gy-7K-qqr"/>
-                            <constraint firstItem="xtQ-Rb-BOj" firstAttribute="top" secondItem="9vf-NL-eD8" secondAttribute="top" constant="86" id="0nB-TC-Q9j"/>
                             <constraint firstItem="lEC-f4-IKq" firstAttribute="centerX" secondItem="9vf-NL-eD8" secondAttribute="centerX" id="ceS-9b-vR1"/>
-                            <constraint firstItem="G2v-Gu-JdI" firstAttribute="top" secondItem="xtQ-Rb-BOj" secondAttribute="bottom" constant="61" id="ct3-21-hUk"/>
-                            <constraint firstItem="xtQ-Rb-BOj" firstAttribute="centerX" secondItem="9vf-NL-eD8" secondAttribute="centerX" id="pHi-rL-foz"/>
+                            <constraint firstItem="G2v-Gu-JdI" firstAttribute="top" secondItem="xtQ-Rb-BOj" secondAttribute="bottom" constant="61" id="dud-Dx-DzC"/>
+                            <constraint firstItem="xtQ-Rb-BOj" firstAttribute="top" secondItem="9vf-NL-eD8" secondAttribute="top" constant="86" id="dzj-k1-GaT"/>
+                            <constraint firstItem="xtQ-Rb-BOj" firstAttribute="leading" secondItem="9vf-NL-eD8" secondAttribute="leading" constant="16" id="unj-me-718"/>
                             <constraint firstItem="9vf-NL-eD8" firstAttribute="bottom" secondItem="lEC-f4-IKq" secondAttribute="bottom" constant="170" id="zQk-ZJ-oQy"/>
+                            <constraint firstItem="9vf-NL-eD8" firstAttribute="trailing" secondItem="xtQ-Rb-BOj" secondAttribute="trailing" constant="16" id="zjB-21-40d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="1.brakesignal" catalog="system" id="SNp-6f-wA2"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="shift" catalog="system" id="SNp-6f-wA2"/>
                     <navigationItem key="navigationItem" id="pNI-QI-FmG"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="xtQ-Rb-BOj" id="m0Q-hk-vhn"/>
@@ -149,6 +150,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uX4-o5-vRR" customClass="TabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="giF-W9-czg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -166,10 +168,10 @@
         <scene sceneID="wQQ-BT-wBE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kep-oI-Jt7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Добро пожаловать" image="2.brakesignal" catalog="system" id="WeW-Yr-KGo"/>
+                    <tabBarItem key="tabBarItem" title="Добро пожаловать" image="figure.walk.circle" catalog="system" id="WeW-Yr-KGo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VQi-dQ-c4H">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -285,12 +287,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.brakesignal" catalog="system" width="128" height="87"/>
-        <image name="2.brakesignal" catalog="system" width="128" height="87"/>
         <image name="alexey" width="991" height="1057"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="figure.walk.circle" catalog="system" width="128" height="123"/>
         <image name="photo" width="640" height="640"/>
         <image name="pip.exit" catalog="system" width="128" height="98"/>
+        <image name="shift" catalog="system" width="128" height="106"/>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
